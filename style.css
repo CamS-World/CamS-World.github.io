@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: cornsilk;
+  font: 18px/1.618 sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: steelblue;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+}
+
+.container {
+  background-color: #333;
+  margin: 2em auto;
+  max-width: 60rem;
+  width: 90%;
+  -webkit-box-shadow: 10px 10px 28px 9px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 10px 10px 28px 9px rgba(0, 0, 0, 0.26);
+  box-shadow: 10px 10px 28px 9px rgba(0, 0, 0, 0.26);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header_logo {
+  margin-left: 1rem;
+  font-style: initial;
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+.header_nav_list {
+  display: flex;
+}
+
+.header_nav_listItem {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.header_nav_listItem:hover {
+  background: #7777;
+  border: 1px solid lightblue;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.profile_heading {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile_image {
+  height: auto;
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+}
+
+.projects_title {
+  text-align: center;
+  background-color: teal;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-shadow: 10px 10px 28px 9px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 10px 10px 28px 9px rgba(0, 0, 0, 0.26);
+  box-shadow: 10px 10px 28px 9px rgba(0, 0, 0, 0.26);
+}
+
+.projects_column_figure {
+  text-align: center;
+}
+
+.projects_column_button {
+  border-radius: 5px;
+  bottom: 0.5rem;
+  color: steelblue;
+  margin: 0px;
+  opacity: 0;
+  position: relative;
+  transition: opacity 0.5s ease-out;
+  transition: 1s;
+}
+
+.projects_column_figure:hover .projects_column_button {
+  bottom: 2.5rem;
+  opacity: 0.8;
+}
+
+.projects_column {
+  padding-left: 0.5rem;
+}
+
+.projects_column_title {
+  margin: 2rem;
+  text-align: center;
+}
+
+.projects_column_image {
+  text-align: center;
+  height: auto;
+  max-width: 100%;
+  padding-right: 0.5rem;
+}
+
+#contactInfo {
+  color: cornsilk;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+#contact-info-title {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+section ul {
+  padding-left: 1rem;
+  list-style: circle;
+}
+
+.footer {
+  background-color: #888888;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: top 3rem;
+}
+
+.fa {
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 2rem;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background-color: #3b5998;
+  color: white;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
+}
+
+.footer-copyright {
+  margin-left: 2rem;
+}
+
+.footer_social {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .header_nav_list {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-copyright {
+    margin: 0;
+  }
+}
