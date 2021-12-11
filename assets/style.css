@@ -95,6 +95,11 @@ a {
   background-color: teal;
 }
 
+/* .skills-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+} */
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -137,6 +142,13 @@ a {
   height: auto;
   max-width: 100%;
   padding-right: 0.5rem;
+}
+
+.skills_column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  list-style: none;
 }
 
 #contactInfo {
