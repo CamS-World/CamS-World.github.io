@@ -176,28 +176,31 @@ section ul {
   margin-top: top 3rem;
 }
 
-.fa {
+/* .fa {
   border-radius: 8px;
   font-size: 15px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  width: 2rem;
-}
+  width: 25px;
+  margin: 0 auto;
+} */
 
 .fa:hover {
   opacity: 0.7;
 }
 
-.fa-linkedin {
+/* .fa-linkedin {
   background-color: #3b5998;
   color: white;
-}
+  /* padding: 10px 10px;
+  margin: 10px 10px; 
+} */
 
-.fa-github {
+/* .fa-github { 
   background: #000;
   color: white;
-}
+} */
 
 .footer-copyright {
   margin-left: 2rem;
@@ -205,6 +208,11 @@ section ul {
 
 .footer_social {
   margin-right: 1rem;
+}
+
+.social-logo {
+  height: 30px;
+  margin-top: 9px;
 }
 
 @media only screen and (max-width: 767px) {
