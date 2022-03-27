@@ -3,165 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Cameron Stephens Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1 id="header_logo">Cameron Stephens</h1>
-        <nav class="header_nav">
-          <ul class="header_nav_list">
-            <li class="header_nav_listItem"><a href="#about-me">About</a></li>
-            <li class="header_nav_listItem">
-              <a href="#contactInfo">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section class="profile">
-        <figure>
+    <header>
+      <div class="logo">
+        <img src="/assets/virtual-pet.jpeg" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Passion Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!---Intro-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hello World! I'm <strong>Cameron Stephens</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+      <img src="/assets/cam-headshot.jpg" alt="" class="intro__img" />
+    </section>
+
+    <!--My Services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Skill</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id
+            neque aliquam vestibulum. In est ante in nibh mauris cursus mattis
+            molestie. Aenean sed adipiscing diam donec adipiscing tristique
+            risus nec. At in tellus integer feugiat scelerisque. Ut aliquam
+            purus sit amet luctus venenatis. Neque gravida in fermentum et
+            sollicitudin. Dignissim suspendisse in est ante.
+          </p>
+        </div>
+        <!--/ service-->
+        <div class="service">
+          <h3>Skill</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id
+            neque aliquam vestibulum. In est ante in nibh mauris cursus mattis
+            molestie. Aenean sed adipiscing diam donec adipiscing tristique
+            risus nec. At in tellus integer feugiat scelerisque. Ut aliquam
+            purus sit amet luctus venenatis. Neque gravida in fermentum et
+            sollicitudin. Dignissim suspendisse in est ante.
+          </p>
+        </div>
+        <!--/ service-->
+        <div class="service">
+          <h3>Skill</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id
+            neque aliquam vestibulum. In est ante in nibh mauris cursus mattis
+            molestie. Aenean sed adipiscing diam donec adipiscing tristique
+            risus nec. At in tellus integer feugiat scelerisque. Ut aliquam
+            purus sit amet luctus venenatis. Neque gravida in fermentum et
+            sollicitudin. Dignissim suspendisse in est ante.
+          </p>
+        </div>
+        <!--/ service-->
+      </div>
+      <!--/ services-->
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!--About Me -->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Lorem ipsum dolor sit amet.
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim
+          diam quis enim lobortis scelerisque fermentum dui. Tristique senectus
+          et netus et malesuada fames ac. Semper eget duis at tellus at. Dictum
+          non consectetur a erat. Eu tincidunt tortor aliquam nulla facilisi
+          cras fermentum odio. Massa tincidunt nunc pulvinar sapien et. Nunc sed
+          augue lacus viverra vitae congue. Nibh praesent tristique magna sit
+          amet purus. Vitae nunc sed velit dignissim. Suspendisse faucibus
+          interdum posuere lorem. Aliquam faucibus purus in massa tempor. Elit
+          pellentesque habitant morbi tristique senectus et netus et malesuada.
+          Ipsum consequat nisl vel pretium lectus quam id leo in. Auctor elit
+          sed vulputate mi.
+        </p>
+      </div>
+      <img
+        src="/assets/Cameron_social_pic_2.jpeg"
+        alt=""
+        class="about-me__img"
+      />
+    </section>
+
+    <!--My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work.
+      </p>
+
+      <!--Project 01 -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/assets/drake.jpeg" alt="" class="portfolio__img" />
+        </a>
+
+        <!--Project 02 -->
+
+        <a href="portfolio-item.html" target="blank" class="portfolio__item">
+          <img src="/assets/robot-pet.jpeg" alt="" class="portfolio__img" />
+        </a>
+
+        <!--Project 03 -->
+
+        <a href="#" class="portfolio__item">
+          <img src="/assets/pet-shelter.jpeg" alt="" class="portfolio__img" />
+        </a>
+
+        <!--Project 04 -->
+
+        <a href="#" class="portfolio__item">
           <img
             src="/assets/cameron-profile.jpg"
-            alt="Self-Portrait"
-            class="profile_image"
+            alt=""
+            class="portfolio__img"
           />
-        </figure>
-        <article class="profile_heading">
-          <h2 id="about-me">About Me</h2>
-          <p id="about-text">
-            Versatile professional with a variety of experiences at their
-            disposal. Detail-oriented and capable of adapting in fast paced
-            environments. Brings pride and passion to every task they undertake.
-          </p>
-        </article>
-      </section>
-      <h2 class="projects_title">Competencies</h2>
-      <section class="skills-list">
-        <article>
-          <ol class="skills_column">
-            <li>Java</li>
-            <li>Communication</li>
-            <li>Arrays and Collections</li>
-            <li>Self-Motivated</li>
-            <li>TDD</li>
-            <li>Problem Solving</li>
-          </ol>
-        </article>
-        <article>
-          <ol class="skills_column">
-            <li>Object-Oriented Programming</li>
-            <li>Team-Oriented</li>
-            <li>HTML & CSS</li>
-            <li>Leadership</li>
-          </ol>
-        </article>
-      </section>
-      <h2 class="projects_title">Current Projects</h2>
-      <section class="projects">
-        <article class="projects_column">
-          <h3 class="projects_column_title">
-            <a
-              href="https://github.com/2021-October-Java-PT/virtual-pet-CamS-World.git"
-              >Virtual Pet</a
-            >
-          </h3>
-          <figure class="projects_column_figure">
-            <img
-              src="/assets/drake.jpeg"
-              alt=""
-              class="projects_column_image"
-            />
-            <input
-              type="button"
-              class="projects_column_button"
-              value="See it here"
-            />
-          </figure>
-          <p>
-            Created a virtual pet application that required tools such as loops,
-            methods, and console application knowledge to create.
-          </p>
-        </article>
-        <article class="projects_column">
-          <h3 class="projects_column_title">
-            <a
-              href="https://github.com/2021-October-Java-PT/virtual-pet-shelter-CamS-World.git"
-              >Virtual Shelter</a
-            >
-          </h3>
-          <figure class="projects_column_figure">
-            <img
-              src="/assets/pet-shelter.jpeg"
-              alt=""
-              class="projects_column_image"
-            />
-            <input
-              type="button"
-              class="projects_column_button"
-              value="See it here"
-            />
-          </figure>
-          <p>
-            Used Java Collections framework to create an interactive application
-            where the user can add pets to their shelter, groom them, feed them,
-            and put them to bed.
-          </p>
-        </article>
-        <article class="projects_column">
-          <h3 class="projects_column_title">
-            <a
-              href="https://github.com/2021-October-Java-PT/virtual-pets-amok-CamS-World.git"
-              >Virtual Pet Amok</a
-            >
-          </h3>
-          <figure class="projects_column_figure">
-            <img
-              src="/assets/robot-pet.jpeg"
-              alt=""
-              class="projects_column_image"
-            />
+        </a>
+      </div>
+    </section>
 
-            <input
-              type="button"
-              class="projects_column_button"
-              value="See it here"
-            />
-          </figure>
-          <p>
-            Utilized Object Oriented Programming tools such as abstraction and
-            plolymorphism to craft an advanced interactive application allowing
-            for more nuance for the user to manage their virtual pets, both
-            organic and robotic.
-          </p>
-        </article>
-      </section>
-      <section id="contactInfo">
-        <h3 id="contact-info-title">Contact Info</h3>
-        <p>If you liked what you saw and want to reach out:</p>
-        <ul>
-          <li>Email: cstephen13@mail.bw.edu</li>
-        </ul>
-      </section>
+    <!--Footer -->
+    <footer class="footer">
+      <a href="" class="footer__link">hello@jane.dev</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://github.com/CamS-World"
+            target="blank"
+            class="social-list__link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/cameron-stephens1/"
+            target="blank"
+            class="social-list__link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://codepen.io/cams-world"
+            target="blank"
+            class="social-list__link"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-      <footer class="footer">
-        <small class="footer_copyright">&copy Cameron Stephens</small>
-        <section class="footer_social">
-          <a href="https://www.linkedin.com/in/cameron-stephens1/" class="fa"
-            ><img
-              class="social-logo"
-              src="/assets/linkedin_mono.jpeg"
-              alt="linkedin"
-          /></a>
-          <a href="https://github.com/CamS-World" class="fa"
-            ><img
-              class="social-logo"
-              src="/assets/github_logo.png"
-              alt="github"
-          /></a>
-        </section>
-      </footer>
-    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
